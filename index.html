@@ -59,18 +59,55 @@
             <div class="container">
                 <h1 class="hero-title">Эффективные решения <br /> для вашего бизнеса</h1>
             <button class="btn" type="button" data-modal-open>Заказать услугу</button>
-        </div>
-        <div class="backdrop is-hidden " data-modal>
-            <div class="modal">
-                <button class="btn-modal" data-modal-close>
-                    <svg class="icon-svg" width="18" height="18">
-                        <use href="./images/icons.svg#icon-close"></use>
-                    </svg>
-                </button>
-            </div>
+       
+        
         </div>
         </section>
-
+<div class="backdrop is-hidden " data-modal>
+    <div class="modal">
+        <form class="form-modal" action="javascript:void(0);" autocomplete="off">
+            <p class="form-modal-text">Оставьте свои данные, мы вам перезвоним</p>
+            <div class="label-groop">
+                <label class="form-modal-label">
+                    <span class="form-modal-span">Имя</span>
+                    <input class="form-modal-input" type="text" name="name" autofocus required>
+                    <svg class="icon-svg-modal" width="18" height="18">
+                        <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                </label>
+                <label class="form-modal-label">
+                    <span class="form-modal-span">Телефон</span>
+                    <input class="form-modal-input" type="phone" name="phone" required>
+                    <svg class="icon-svg-modal" width="18" height="18">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                </label>
+                <label class="form-modal-label">
+                    <span class="form-modal-span">Почта</span>
+                    <input class="form-modal-input" type="email" name="email" required>
+                    <svg class="icon-svg-modal" width="18" height="18">
+                        <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                </label>
+                <label class="form-modal-label">
+                    <span class="form-modal-span">Комментарий</span>
+                    <textarea class="form-modal-comment" placeholder="Введите текст" name="text"></textarea>
+                </label>
+            </div>
+            <label class="form-modal-checkbox">
+                <input class="checkbox" type="checkbox" name="policy">
+                <span class="checkbox-icon"></span>
+                Соглашаюсь с рассылкой и принимаю <a class="checkbox-text" href="">Условия договора</a>
+            </label>
+            <button type="submit" class="btn btn-form">Отправить</button>
+        </form>
+        <button class="btn-modal" data-modal-close>
+            <svg class="icon-svg" width="18" height="18">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+</div>
         <section class="section">
             <div class="container">
                 <h2 class="section-title visually-hidden">Наши преимущества</h2>
@@ -317,7 +354,7 @@
                     </div>
                 </section>
 
-                <section class="section">
+        <section class="section">
                     <div class="container">
                         <h2 class="section-title">Постоянные клиенты</h2>
                         <ul class="clients-list">
@@ -421,6 +458,18 @@
                                 </a>
                             </li>
                 </ul>
+            </div>
+            <div class="form">
+                <p class="form-text">Подпишитесь на рассылку</p>
+                <form class="form-ft" autocomplete="off" action= "javascript:void(0);">
+                <input class="input-ft" type="email" name="email" placeholder="E-mail" required>
+                <button class="btn-ft" type="submit">
+                    Подписаться
+                    <svg class="icon-send" width="24" height="24">
+                    <use href="./images/icons.svg#icon-icon_send"></use>
+                </svg>
+            </button>
+                </form>
             </div>
         </div>
         </div>
