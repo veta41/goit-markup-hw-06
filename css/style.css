@@ -249,7 +249,7 @@ p {
   left: 50%;
   min-width: 528px;
   min-height: 581px;
-  padding: 8px;
+
   background: var(--secondary);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -277,10 +277,11 @@ p {
 .form-modal {
   display: flex;
   flex-direction: column;
-  padding: 32px;
+  padding: 40px;
 }
 .label-groop {
   text-align: start;
+  margin-bottom: 20px;
 }
 .form-modal-text {
   margin-bottom: 12px;
@@ -295,6 +296,9 @@ p {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.form-modal-label:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -305,6 +309,7 @@ p {
   border-radius: 4px;
   padding: 11px 12px;
   padding-left: 42px;
+
   transition: outline-color 250ms var(--transition-timing);
 }
 
@@ -339,7 +344,7 @@ p {
   box-sizing: border-box;
   border-radius: 4px;
   padding: 12px 16px;
-  margin-bottom: 20px;
+  resize: none;
   height: 120px;
   transition: outline-color 250ms var(--transition-timing);
 }
@@ -358,7 +363,7 @@ p {
 }
 .form-modal-checkbox {
   display: flex;
-
+  justify-content: center;
   align-items: center;
   margin-bottom: 30px;
   font-size: 14px;
@@ -621,6 +626,7 @@ img {
 
 .contact {
   margin-right: 70px;
+  flex-grow: 1;
 }
 .address {
   margin-top: 20px;
@@ -698,7 +704,7 @@ img {
 
 .btn-ft {
   display: inline-flex;
-
+  align-items: center;
   padding: 10px 29px;
   color: var(--secondary);
   background: var(--accent-btn);
