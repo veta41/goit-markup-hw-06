@@ -309,13 +309,18 @@ p {
   border-radius: 4px;
   padding: 11px 12px;
   padding-left: 42px;
+  outline:none;
+  transition: border-color 250ms var(--transition-timing);
+}
 
-  transition: outline-color 250ms var(--transition-timing);
+.form-modal-comment{
+  outline:none;
+  transition: border-color 250ms var(--transition-timing);
 }
 
 .form-modal-comment:focus,
 .form-modal-input:focus {
-  outline-color: var(--accent-btn);
+  border-color: var(--accent-btn);
 }
 .icon-svg-modal {
   position: absolute;
